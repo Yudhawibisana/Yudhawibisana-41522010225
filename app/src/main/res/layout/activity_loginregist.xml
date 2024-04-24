@@ -26,6 +26,7 @@
         android:fontFamily="@font/montserratregular"
         android:text="Login"
         android:textColor="@color/white"
+        android:onClick="login"
         app:layout_constraintBottom_toTopOf="@+id/btn02"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
@@ -38,12 +39,26 @@
         android:layout_marginBottom="56dp"
         android:background="@drawable/btn02"
         android:fontFamily="@font/montserratregular"
-        android:text="register"
+        android:text="Register"
         android:textColor="#4E5355"
+        android:onClick="regis"
         app:layout_constraintBottom_toTopOf="@+id/imageView8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserratregular"
+        android:gravity="center"
+        android:text="Kebaikan Alam Kebaikan Hidup"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn02" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -62,16 +77,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/btl2" />
 
-    <TextView
-        android:id="@+id/text2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:paddingTop="20dp"
-        android:text="Kebaikan Alam\nKebaikan Hidup"
-        android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/btn02"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
