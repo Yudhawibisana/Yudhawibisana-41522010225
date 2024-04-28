@@ -26,4 +26,9 @@ public class register1 extends AppCompatActivity {
         Intent back = new Intent(register1.this, loginregist.class);
         startActivity(back);
     }
+
+    public void kelogin(View view) {
+        Intent kelogin = new Intent(register1.this, login.class);
+        startActivity(kelogin);
+    }
 }

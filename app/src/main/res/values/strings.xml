@@ -1,3 +1,32 @@
 <resources>
-    <string name="app_name">aqua</string>
+    <string name="app_name">Tugas2Coba1</string>
+
+    <string name="kebaikan_be">KEBAIKAN\nBERAWAL\nDARI SINI</string>
+
+    <string name="selamat_pag">Selamat Pagi </string>
+
+    <string name="olivia_gabr">
+olivia.gabrielle@gmail.com
+</string>
+
+    <string name="scan_kode_d">
+Scan kode dibalik tutup botol dan tukarkan hadiah menarik
+</string>
+
+
+    <string name="vaganza_fie">
+Vaganza Fiesta
+</string>
+
+    <string name="hadiah_mena">
+Hadiah Menarik
+</string>
+
+    <string name="temukan_kod">
+Temukan kode\ndibalik tutup botol
+</string>
+
+    <string name="some_id">
+30
+</string>
 </resources>
