@@ -1,12 +1,16 @@
 package com.example.aqua;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import android.view.View;
+import android.content.Intent;
 
 public class loginregist extends AppCompatActivity {
 
@@ -21,4 +25,16 @@ public class loginregist extends AppCompatActivity {
             return insets;
         });
     }
+
+    public void login(View view) {
+        Intent login = new Intent(loginregist.this, login.class);
+        startActivity(login);
+    }
+
+
+    public void regis(View view) {
+        Intent regis = new Intent(loginregist.this, register1.class);
+        startActivity(regis);
+    }
+
 }

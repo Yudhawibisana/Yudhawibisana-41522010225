@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".redeemvaganzapt2">
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:onClick="pindahtohome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/button2" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="Redeem Vaganza"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="Sistem"
+        android:textColor="#4D4D4D"
+        android:textSize="13dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relative1" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratregular"
+        android:text="Pengguna menukarkan hadiah\ndengan memilih dari katalog"
+        android:textColor="#4D4D4D"
+        android:textSize="13dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="70dp"
+        app:layout_constraintStart_toEndOf="@+id/text1"
+        app:layout_constraintTop_toBottomOf="@+id/relative1" />
+
+    <TextView
+        android:id="@+id/text12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="Periode\nPenukaran"
+        android:textColor="#4D4D4D"
+        android:textSize="13dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+    <TextView
+        android:id="@+id/text22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratregular"
+        android:text="Kapan saja selama periode\nprogram masih aktif"
+        android:textColor="#4D4D4D"
+        android:textSize="13dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="43dp"
+        app:layout_constraintStart_toEndOf="@+id/text12"
+        app:layout_constraintTop_toBottomOf="@+id/text2" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/line_sidebar_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text22" />
+
+    <LinearLayout
+        android:id="@+id/poinanda"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:onClick="spin"
+        android:background="@drawable/btn01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Poin Anda"
+            android:fontFamily="@font/montserratsemibold"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="300"
+            android:fontFamily="@font/montserratsemibold"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="175dp"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="Katalog"
+        android:textColor="#4D4D4D"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/poinanda" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativetraveloka"
+        android:layout_width="175dp"
+        android:layout_height="223dp"
+        android:background="@drawable/trave"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:onClick="redeem2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <TextView
+            android:id="@+id/text_trav0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="Redeemvaganza"
+            android:textColor="#1A529D"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/text_trav1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/text_trav0"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="Diskon 70% Hotel"
+            android:textColor="#4D4D4D"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/text_trav2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_trav1"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/mbold"
+            android:text="200 Tutup Botol"
+            android:textColor="#4D4D4D"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="59dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/text_trav2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-2dp"
+            android:src="@drawable/pls_mns" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativefood"
+        android:layout_width="175dp"
+        android:layout_height="223dp"
+        android:background="@drawable/bg_food2"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintStart_toEndOf="@+id/relativetraveloka"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <TextView
+            android:id="@+id/text_food0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="Redeemvaganza"
+            android:textColor="#1A529D"
+            android:textSize="10dp" />
+
+
+        <TextView
+            android:id="@+id/text_food1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="Food Voucher 35%"
+            android:textColor="#4D4D4D"
+            android:textSize="15dp"
+            android:layout_below="@id/text_food0"/>
+
+        <TextView
+            android:id="@+id/text_food2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_food1"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/mbold"
+            android:text="200 Tutup Botol"
+            android:textColor="#4D4D4D"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="59dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/text_food2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-2dp"
+            android:src="@drawable/pls_mns" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativegojek"
+        android:layout_width="175dp"
+        android:layout_height="223dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_gojek2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativetraveloka">
+
+        <TextView
+            android:id="@+id/text_gojek0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="Redeemvaganza"
+            android:textColor="#1A529D"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/text_gojek1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/text_gojek0"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="Voucher GoFood"
+            android:textColor="#4D4D4D"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/text_gojek2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_gojek1"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/mbold"
+            android:text="200 Tutup Botol"
+            android:textColor="#4D4D4D"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="59dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/text_gojek2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-2dp"
+            android:src="@drawable/pls_mns" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeshopee"
+        android:layout_width="175dp"
+        android:layout_height="223dp"
+        android:background="@drawable/bg_shopee2"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintStart_toEndOf="@+id/relativegojek"
+        app:layout_constraintTop_toBottomOf="@+id/relativefood">
+
+        <TextView
+            android:id="@+id/text_shopee0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="Redeemvaganza"
+            android:textColor="#1A529D"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/text_shopee1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/text_shopee0"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="Cashback Shopeepay"
+            android:textColor="#4D4D4D"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/text_shopee2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_shopee1"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/mbold"
+            android:text="200 Tutup Botol"
+            android:textColor="#4D4D4D"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="59dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/text_shopee2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-2dp"
+            android:src="@drawable/pls_mns" />
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
